@@ -11,12 +11,6 @@ screen = pygame.display.set_mode(size)
 clock = pygame.time.Clock()
 
 frame = np.random.randint(2, size=(int(width/life_size),int(height/life_size)))
-# frame = np.zeros((int(width/life_size),int(height/life_size)))
-# frame[0][0]=1
-# frame[0][1]=1
-# frame[1][0]=1
-# frame[1][1]=1
-# print(frame)
 
 def draw_life(frame):
     for i in range(len(frame)):
